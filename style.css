@@ -5,5 +5,21 @@ body{
 
 .container{
     margin: auto;
+    width: 70%;
+    padding: 2rem 2rem;
+    font-size: larger;
+}
 
+input{
+    padding: 0.3rem 0.5rem;
+}
+
+button{
+    font-size:medium;
+    font-weight: bold;
+    width : auto;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.4rem;
+    color: rgb(27, 1, 27);
+    
 }
