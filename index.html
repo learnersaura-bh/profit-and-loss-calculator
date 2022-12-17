@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Stock Calculator</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <h1> Stock Profit & Loss Calculator</h1>
+    <hr>
     <div class="container">
-        <label for="cost-price">Eter Buying Price</label>
-        <input type="number" id="cost-price">
-        <label for="stock-qty">Eter stocks quantity</label>
-        <input type="number" id="cost-stock-qty">
-        <label for="sell-price">Enter Selling Price</label>
-        <input type="number" id="sell-price">
-        <p id="show-output"></p>
+        <label for="cost-price">Enter Buying Price</label><br>
+        <input type="number" id="cost-price"><br>
+        <label for="stock-qty">Enter stocks quantity</label><br>
+        <input type="number" id="stock-qty"><br>
+        <label for="sell-price">Enter Selling Price</label><br>
+        <input type="number" id="sell-price"><br><br>
+        <button id="check-btn"> Tell Me</button>
         
     </div>
+    <p id="show-message"></p>
     <script src="/app.js"></script>
 </body>
 </html>
