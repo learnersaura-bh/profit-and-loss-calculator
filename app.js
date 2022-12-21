@@ -8,20 +8,18 @@ const showMessage = document.querySelector("#show-message")
 
 function calculateProfitLoss(){
 
-    var sell = sellPrice.value;
-    var cost = costPrice.value;
-    var stock = stockQuantity.value;
+    var sell = Number(sellPrice.value);
+    var cost = Number(costPrice.value);
+    var stock = Number(stockQuantity.value);
 
     var totalCost = cost*stock;
 
-   if(sell && cost && stock){ if(sell*stock < cost*stock ){
+   if(sell>0 && cost>0 && stock>0){ if(sell*stock < cost*stock ){
         var loss = cost*stock - sell*stock ;
         var lossPer = loss*100/totalCost;
 var text =  `You are in loss of amount ${loss} and loss percentage is ${Number(lossPer.toFixed(2))} %`
 
 showMessage.innerText = text;
-
-
     //   console.log(loss , Number(lossPer.toFixed(2)));
     
 }else if (cost*stock < sell*stock){
@@ -35,7 +33,7 @@ showMessage.innerText = text;
         showMessage.innerText = "neither in profit nor in loss"
         // console.log("neither profit nor loss")
     }}
-    else{ showMessage.innerText = " * PLEASE ENTER ALL FIELDS"}
+    else{ showMessage.innerText = " *Please enter all fields with positive values more than zero"}
 }
 
 
